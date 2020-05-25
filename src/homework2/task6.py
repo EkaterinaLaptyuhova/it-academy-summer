@@ -12,7 +12,6 @@ def palindrom(n):
     :return: Bool. True или False. Является ли число палиндромом.
     """
 
-    # write your code here
     if n < 0:
         return False
 
