@@ -13,10 +13,18 @@ def palindrom(n):
     """
 
     # write your code here
-    return ''  # write return value here
+    if n < 0:
+        return False
+
+    duplicate = n
+    reverse = 0
+    while n > 0:
+        reverse = reverse * 10 + (n % 10)
+        n = n // 10
+    return duplicate == reverse  # write return value here
 
 
 if __name__ == '__main__':
     # здесь можно сделать ввод из консоли и проверить работу функции
-    n = 0
+    n = int(input('Vvedite chislo: '))
     print(palindrom(n))
